@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>KRITANJ</title>
+        <meta name="keywords" content="kritanj" />
+        <meta name="description" content="kritanj">
+        
+
+       
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i|Montserrat:400,700" rel="stylesheet">
+
+       
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/animate.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/themify/themify.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/scrollbar/scrollbar.min.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/swiper/swiper.min.css" rel="stylesheet" type="text/css"/>
+        <link href="vendor/cubeportfolio/css/cubeportfolio.min.css" rel="stylesheet" type="text/css"/>
+
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <link href="css/global/global.css" rel="stylesheet" type="text/css"/>
+
+
+        
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+        <link rel="stylesheet" href="font.css">
+     
+       <style> @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+  .glitchwrapper {
+    align-items: center;
+  background: #FFF;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.2s linear;
+  width: 100%;
+  z-index: 9999;
+  opacity: 1;
+  transform: opacity 1s linear;
+   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.glitch {
+   position: relative;
+   font-family: 'SPACEARMOR',sans-serif;
+   font-size: 101px;
+   font-weight: 700;
+   line-height: 1.2;
+   color: #fff;
+   letter-spacing: 6px;
+   animation: shift 4s ease-in-out infinite alternate;
+   z-index: 1;
+}
+
+
+.glitch:before {
+   content: attr(data-glitch);
+   position: absolute;
+   top: 0;
+   left: -2px;
+   text-shadow: -1px 0 #00ffff;
+   width: 100%;
+   color: #fff;
+   background-color: #222;
+   overflow: hidden;
+   clip: rect(0, 900px, 0, 0);
+   animation: noise-before 3s infinite linear alternate-reverse;
+}
+
+.glitch:after {
+   content: attr(data-glitch);
+   position: absolute;
+   top: 0;
+   left: 2px;
+   text-shadow: 1px 0 #ff00ff;
+   width: 100%;
+   color: #fff;
+   background-color: #222;
+   overflow: hidden;
+   clip: rect(0, 900px, 0, 0);
+   animation: noise-after 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-before {
+   0% {
+      clip: rect(61px, 9999px, 52px, 0);
+   }
+
+   5% {
+      clip: rect(33px, 9999px, 144px, 0);
+   }
+
+   10% {
+      clip: rect(121px, 9999px, 115px, 0);
+   }
+
+   15% {
+      clip: rect(144px, 9999px, 162px, 0);
+   }
+
+   20% {
+      clip: rect(62px, 9999px, 180px, 0);
+   }
+
+   25% {
+      clip: rect(34px, 9999px, 42px, 0);
+   }
+
+   30% {
+      clip: rect(147px, 9999px, 179px, 0);
+   }
+
+   35% {
+      clip: rect(99px, 9999px, 63px, 0);
+   }
+
+   40% {
+      clip: rect(188px, 9999px, 122px, 0);
+   }
+
+   45% {
+      clip: rect(154px, 9999px, 14px, 0);
+   }
+
+   50% {
+      clip: rect(63px, 9999px, 37px, 0);
+   }
+
+   55% {
+      clip: rect(161px, 9999px, 147px, 0);
+   }
+
+   60% {
+      clip: rect(109px, 9999px, 175px, 0);
+   }
+
+   65% {
+      clip: rect(157px, 9999px, 88px, 0);
+   }
+
+   70% {
+      clip: rect(173px, 9999px, 131px, 0);
+   }
+
+   75% {
+      clip: rect(62px, 9999px, 70px, 0);
+   }
+
+   80% {
+      clip: rect(24px, 9999px, 153px, 0);
+   }
+
+   85% {
+      clip: rect(138px, 9999px, 40px, 0);
+   }
+
+   90% {
+      clip: rect(79px, 9999px, 136px, 0);
+   }
+
+   95% {
+      clip: rect(25px, 9999px, 34px, 0);
+   }
+
+   100% {
+      clip: rect(173px, 9999px, 166px, 0);
+   }
+}
+
+@keyframes noise-after {
+   0% {
+      clip: rect(26px, 9999px, 33px, 0);
+   }
+
+   5% {
+      clip: rect(140px, 9999px, 198px, 0);
+   }
+
+   10% {
+      clip: rect(184px, 9999px, 89px, 0);
+   }
+
+   15% {
+      clip: rect(121px, 9999px, 6px, 0);
+   }
+
+   20% {
+      clip: rect(181px, 9999px, 99px, 0);
+   }
+
+   25% {
+      clip: rect(154px, 9999px, 133px, 0);
+   }
+
+   30% {
+      clip: rect(134px, 9999px, 169px, 0);
+   }
+
+   35% {
+      clip: rect(26px, 9999px, 187px, 0);
+   }
+
+   40% {
+      clip: rect(147px, 9999px, 137px, 0);
+   }
+
+   45% {
+      clip: rect(31px, 9999px, 52px, 0);
+   }
+
+   50% {
+      clip: rect(191px, 9999px, 109px, 0);
+   }
+
+   55% {
+      clip: rect(74px, 9999px, 54px, 0);
+   }
+
+   60% {
+      clip: rect(145px, 9999px, 75px, 0);
+   }
+
+   65% {
+      clip: rect(153px, 9999px, 198px, 0);
+   }
+
+   70% {
+      clip: rect(99px, 9999px, 136px, 0);
+   }
+
+   75% {
+      clip: rect(118px, 9999px, 192px, 0);
+   }
+
+   80% {
+      clip: rect(1px, 9999px, 83px, 0);
+   }
+
+   85% {
+      clip: rect(145px, 9999px, 98px, 0);
+   }
+
+   90% {
+      clip: rect(121px, 9999px, 154px, 0);
+   }
+
+   95% {
+      clip: rect(156px, 9999px, 44px, 0);
+   }
+
+   100% {
+      clip: rect(67px, 9999px, 122px, 0);
+   }
+}
+
+@keyframes shift {
+   0%, 40%, 44%, 58%, 61%, 65%, 69%, 73%, 100% {
+      transform: skewX(0deg);
+   }
+
+   41% {
+      transform: skewX(10deg);
+   }
+
+   42% {
+      transform: skewX(-10deg);
+   }
+
+   59% {
+      transform: skewX(40deg) skewY(10deg);
+   }
+
+   60% {
+      transform: skewX(-40deg) skewY(-10deg);
+   }
+
+   63% {
+      transform: skewX(10deg) skewY(-5deg);
+   }
+
+   70% {
+      transform: skewX(-50deg) skewY(-20deg);
+   }
+
+   71% {
+      transform: skewX(10deg) skewY(-10deg);
+   }
+}
+@media screen and (max-width: 430px)
+       { .glitch
+         {
+         font-size: 30px;
+         
+       } }
+   </style>
+    </head>
+
+    <body id="bdback">
+  <div class="glitchwrapper">
+   <div class="glitch" data-glitch="KRITANJ">KRITANJ</div>
+</div>
+
+        <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
+            <div class="s-header__navbar">
+                <div class="s-header__container">
+                    <div class="s-header__navbar-row">
+                        <div class="s-header__navbar-row-col">
+                            <div class="s-header__logo">
+                                <a href="index.html" class="s-header__logo-link">
+                                    <img class="s-header__logo-img s-header__logo-img-default" src="img/logo.png" alt="kritanj Logo">
+                                    <img class="s-header__logo-img s-header__logo-img-shrink" src="img/logo-dark.png" alt="kritanj Logo">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="s-header__navbar-row-col">
+
+                            <a href="javascript:void(0);" class="s-header__trigger js__trigger">
+                                <span class="s-header__trigger-icon"></span>
+                                <svg x="0rem" y="0rem" width="3.125rem" height="3.125rem" viewbox="0 0 54 54">
+                                    <circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+                                </svg>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+ 
+            <div class="s-header-bg-overlay js__bg-overlay">
+
+                <nav class="s-header__nav js__scrollbar">
+                    <div class="container-fluid">
+                             
+                        <ul class="list-unstyled s-header__nav-menu">
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="">events</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
+                        </ul>
+                        <!-- End Menu List -->
+
+                        <!-- Menu List -->                                
+                        <ul class="list-unstyled s-header__nav-menu">
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
+                            <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
+                        </ul>
+
+                    </div>
+                </nav>
+
+                <ul class="list-inline s-header__action s-header__action--lb">
+                    <li class="s-header__action-item"><a class="s-header__action-link -is-active" href="#">En</a></li>
+                    <li class="s-header__action-item"><a class="s-header__action-link" href="#">Fr</a></li>
+                </ul>
+
+                <ul class="list-inline s-header__action s-header__action--rb">
+                    <li class="s-header__action-item">
+                        <a class="s-header__action-link" href="#">
+                            <i class="g-padding-r-5--xs ti-facebook"></i>
+                            <span class="g-display-none--xs g-display-inline-block--sm">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="s-header__action-item">
+                        <a class="s-header__action-link" href="#">
+                            <i class="g-padding-r-5--xs ti-twitter"></i>
+                            <span class="g-display-none--xs g-display-inline-block--sm">Twitter</span>
+                        </a>
+                    </li>
+                    <li class="s-header__action-item">
+                        <a class="s-header__action-link" href="#">
+                            <i class="g-padding-r-5--xs ti-instagram"></i>
+                            <span class="g-display-none--xs g-display-inline-block--sm">Instagram</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+        </header>
+
+        <div class="s-swiper ">
+
+            <div class="swiper-wrapper">
+                <div class="g-fullheight--xs g-bg-position--center swiper-slide" id="heromation">
+                    <div class="container g-text-center--xs g-ver-center--xs">
+                        <div class="g-margin-b-30--xs">
+
+                            <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">
+                              <svg viewBox="0 0 1320 300" class="svg">
+                                <text x="50%" y="50%" dy=".35em" text-anchor="middle" style="font-family: 'SPACEARMOR',sans-serif; display: inline-block;">
+                                  KRITANJ
+                                </text>
+                              </svg>
+                            </h1>
+                        </div>
+                      
+                    </div>
+                </div>
+             
+            </div>
+           
+            
+            <a href="#js__scroll-to-section" class="s-scroll-to-section-v1--bc g-margin-b-15--xs">
+                <span class="g-font-size-18--xs g-color--white ti-angle-double-down"></span>
+                <p class="text-uppercase g-color--white g-letter-spacing--3 g-margin-b-0--xs">Register now</p>
+            </a>
+        </div>
+
+        <div id="" class="container g-padding-y-80--xs g-padding-y-125--sm">
+            <div class="g-text-center--xs g-margin-b-100--xs">
+                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Welcome to KRITANJ</p>
+                <h2 class=""style="font-family: 'Bad Script', cursive;font-size:56px; color:white;">We Create Beautiful Experiences </h2>
+            </div>
+            <div class="row g-margin-b-60--xs g-margin-b-70--md">
+                <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
+                    <div class="clearfix">
+                        <div class="g-media g-width-30--xs">
+                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".1s">
+                                <i class="g-font-size-28--xs g-color--primary ti-desktop"></i>
+                            </div>
+                        </div>
+                        <div class="g-media__body g-padding-x-20--xs">
+                            <h3 class="g-font-size-18--xs"  style=" color: #dcc4ff;">Lorem ipsum</h3>
+                            <p class="g-margin-b-0--xs" style="
+    color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id nisl venenatis, lacinia nisi id,</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
+                    <div class="clearfix">
+                        <div class="g-media g-width-30--xs">
+                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".2s">
+                                <i class="g-font-size-28--xs g-color--primary ti-settings"></i>
+                            </div>
+                        </div>
+                        <div class="g-media__body g-padding-x-20--xs">
+                            <h3 class="g-font-size-18--xs"  style=" color: #dcc4ff;">Lorem ipsum</h3>
+                            <p class="g-margin-b-0--xs" style="
+    color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id nisl venenatis, lacinia nisi id,</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="clearfix">
+                        <div class="g-media g-width-30--xs">
+                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".3s">
+                                <i class="g-font-size-28--xs g-color--primary ti-ruler-alt-2"></i>
+                            </div>
+                        </div>
+                        <div class="g-media__body g-padding-x-20--xs">
+                            <h3 class="g-font-size-18--xs"  style=" color: #dcc4ff;">Lorem ipsum</h3>
+                            <p class="g-margin-b-0--xs"  style=" color: #dcc4ff;">>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id nisl venenatis, lacinia nisi id,</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
+                    <div class="clearfix">
+                        <div class="g-media g-width-30--xs">
+                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".4s">
+                                <i class="g-font-size-28--xs g-color--primary ti-package"></i>
+                            </div>
+                        </div>
+                        <div class="g-media__body g-padding-x-20--xs">
+                            <h3 class="g-font-size-18--xs" style=" color: #dcc4ff;">Lorem ipsum</h3>
+                            <p class="g-margin-b-0--xs" style="
+    color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id nisl venenatis, lacinia nisi id,</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 g-margin-b-60--xs g-margin-b-0--md">
+                    <div class="clearfix">
+                        <div class="g-media g-width-30--xs">
+                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".5s">
+                                <i class="g-font-size-28--xs g-color--primary ti-star"></i>
+                            </div>
+                        </div>
+                        <div class="g-media__body g-padding-x-20--xs">
+                            <h3 class="g-font-size-18--xs"  style=" color: #dcc4ff;">Powerful Performance</h3>
+                            <p class="g-margin-b-0--xs" style="
+    color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id nisl venenatis, lacinia nisi id,</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4">
+                    <div class="clearfix">
+                        <div class="g-media g-width-30--xs">
+                            <div class="wow fadeInDown" data-wow-duration=".3" data-wow-delay=".6s">
+                                <i class="g-font-size-28--xs g-color--primary ti-panel"></i>
+                            </div>
+                        </div>
+                        <div class="g-media__body g-padding-x-20--xs">
+                            <h3 class="g-font-size-18--xs"  style=" color: #dcc4ff;">Parallax Support</h3>
+                            <p class="g-margin-b-0--xs" style="
+    color: white;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque id nisl venenatis, lacinia nisi id,</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="js__parallax-window" style="background: url(image/image3new.jpg) 50% 0 no-repeat fixed;">
+            <div class="container g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
+                <div class="g-margin-b-80--xs">
+                    <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md g-color--white">The Fastest Way To Develop</h2>
+                </div>
+                <a href="" class="text-uppercase s-btn s-btn--md s-btn--white-brd g-radius--50">Learn More</a>
+            </div>
+        </div>
+
+        <div class="g-promo-section">
+            <div class="container g-padding-y-80--xs g-padding-y-125--sm">
+                <div class="row">
+                    <div class="col-md-4 g-margin-t-15--xs g-margin-b-60--xs g-margin-b-0--lg">
+                        <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Culture</p>
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                            <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md" style="color: white;">About</h2>
+                        </div>
+                        <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
+                            <h2 class="g-font-size-40--xs g-font-size-50--sm g-font-size-60--md" style="color: white;">kRITANJ</h2>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-md-offset-1">
+                        <p class="g-font-size-18--xs g-color--primary" >We aim high at being focused on building relationships with our clients and community. Using our creative gifts drives this foundation. The time has come to bring those ideas and plans to life. This is where we really begin to visualize your napkin sketches and make them into beautiful pixels.</p>
+                        <p class="g-font-size-18--xs g-color--primary">Now that your brand is all dressed up and ready to party, it's time to release it to the world. By the way, let's celebrate already.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 g-promo-section__img-right--lg g-bg-position--center g-height-100-percent--md js__fullwidth-img">
+                <img class="img-responsive" src="resized2/IMG_20230301_202204.jpg" alt="Image">
+            </div>
+        </div>
+
+        <div class="js__parallax-window" style="background: url(image/image1.jpeg) 50% 0 no-repeat fixed;">
+            <div class="g-container--sm g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
+                <div class="g-margin-b-80--xs">
+                    <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-25--xs">Subscribe</p>
+                    <h2 class="g-font-size-32--xs g-font-size-36--md g-color--white">Join Over 1000+ People</h2>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
+                        <form class="input-group">
+                            <input type="email" class="form-control s-form-v1__input g-radius--left-50" name="email" placeholder="Enter your email">
+                            <span class="input-group-btn">
+                                <button type="submit" class="s-btn s-btn-icon--md s-btn-icon--white-brd s-btn--white-brd g-radius--right-50"><i class="ti-arrow-right"></i></button>
+                            </span>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container g-padding-y-80--xs" id="js__scroll-to-section">
+            <div class="g-text-center--xs g-margin-b-40--xs">
+                <h2 class=" g-color--primary" style="font-family: 'Bad Script', cursive;font-size:56px;">Events</h2>
+            </div>
+            <div class="s-portfolio">
+                <div id="js__filters-portfolio-gallery" class="s-portfolio__filter-v1 cbp-l-filters-text cbp-l-filters-center">
+                    <div data-filter="*" class="s-portfolio__filter-v1-item cbp-filter-item cbp-filter-item-active">Show All</div>
+                    <div data-filter=".games" class="s-portfolio__filter-v1-item cbp-filter-item">Games</div>
+                    <div data-filter=".exhibition" class="s-portfolio__filter-v1-item cbp-filter-item">Exhibition</div>
+                    <div data-filter=".compete" class="s-portfolio__filter-v1-item cbp-filter-item">Competitions</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container g-margin-b-100--xs">
+            <div id="js__grid-portfolio-gallery" class="cbp">
+
+                <div class="s-portfolio__item cbp-item exhibition compete">
+                    <div class="s-portfolio__img-effect">
+                        <img src="img/970x647/04.jpg" alt="Portfolio Image">
+                    </div>
+                    <div class="s-portfolio__caption-hover--cc">
+                        <div class="g-margin-b-25--xs">
+                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
+                            <p class="g-color--white-opacity">for kritanj.techfest</p>
+                        </div>
+                        <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+                            <li>
+                                <a href="img/970x647/05.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> for kritanj.techfest">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
+                                    <i class="ti-link"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="s-portfolio__item cbp-item games">
+                    <div class="s-portfolio__img-effect">
+                        <img src="img/970x647/03.jpg" alt="Portfolio Image">
+                    </div>
+                    <div class="s-portfolio__caption-hover--cc">
+                        <div class="g-margin-b-25--xs">
+                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
+                            <p class="g-color--white-opacity">for kritanj.techfest</p>
+                        </div>
+                        <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+                            <li>
+                                <a href="img/970x647/06.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> for kritanj.techfest">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
+                                    <i class="ti-link"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="s-portfolio__item cbp-item exhibition">
+                    <div class="s-portfolio__img-effect">
+                        <img src="img/970x647/02.jpg" alt="Portfolio Image">
+                    </div>
+                    <div class="s-portfolio__caption-hover--cc">
+                        <div class="g-margin-b-25--xs">
+                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
+                            <p class="g-color--white-opacity">for kritanj.techfest</p>
+                        </div>
+                        <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+                            <li>
+                                <a href="img/970x647/07.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> for kritanj.techfest">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
+                                    <i class="ti-link"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="s-portfolio__item cbp-item compete games">
+                    <div class="s-portfolio__img-effect">
+                        <img src="img/970x647/01.jpg" alt="Portfolio Image">
+                    </div>
+                    <div class="s-portfolio__caption-hover--cc">
+                        <div class="g-margin-b-25--xs">
+                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
+                            <p class="g-color--white-opacity">for kritanj.techfest</p>
+                        </div>
+                        <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+                            <li>
+                                <a href="img/970x647/08.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> for kritanj.techfest">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
+                                    <i class="ti-link"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="s-portfolio__item cbp-item exhibition games">
+                    <div class="s-portfolio__img-effect">
+                        <img src="img/970x647/09.jpg" alt="Portfolio Image">
+                    </div>
+                    <div class="s-portfolio__caption-hover--cc">
+                        <div class="g-margin-b-25--xs">
+                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
+                            <p class="g-color--white-opacity">for kritanj.techfest</p>
+                        </div>
+                        <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+                            <li>
+                                <a href="img/970x647/09.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> for kritanj.techfest">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
+                                    <i class="ti-link"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="s-portfolio__item cbp-item compete games">
+                    <div class="s-portfolio__img-effect">
+                        <img src="img/970x647/05.jpg" alt="Portfolio Image">
+                    </div>
+                    <div class="s-portfolio__caption-hover--cc">
+                        <div class="g-margin-b-25--xs">
+                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
+                            <p class="g-color--white-opacity">for kritanj.techfest</p>
+                        </div>
+                        <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+                            <li>
+                                <a href="img/970x647/04.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> for kritanj.techfest">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
+                                    <i class="ti-link"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="js__parallax-window" style="background: url(image/DSCN0557.JPG) 50% 0 no-repeat fixed;">
+            <div class="container g-text-center--xs g-padding-y-80--xs g-padding-y-125--sm">
+                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--white-opacity g-letter-spacing--2 g-margin-b-50--xs">Testimonials</p>
+                <div class="s-swiper js__swiper-testimonials">
+                    <div class="swiper-wrapper g-margin-b-50--xs">
+                        <div class="swiper-slide g-padding-x-130--sm g-padding-x-150--lg">
+                            <div class="g-padding-x-20--xs g-padding-x-50--lg">
+                                <div class="g-margin-b-40--xs">
+                                    <p class="g-font-size-22--xs g-font-size-28--sm g-color--white"><i>" I have purchased many great templates over the years but this product and this company have taken it to the next level. Exceptional customizability. "</i></p>
+                                </div>
+                                <div class="center-block g-hor-divider__solid--white-opacity-lightest g-width-100--xs g-margin-b-30--xs"></div>
+                                <h4 class="g-font-size-15--xs g-font-size-18--sm g-color--white-opacity-light g-margin-b-5--xs">Jake Richardson / Google</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide g-padding-x-130--sm g-padding-x-150--lg">
+                            <div class="g-padding-x-20--xs g-padding-x-50--lg">
+                                <div class="g-margin-b-40--xs">
+                                    <p class="g-font-size-22--xs g-font-size-28--sm g-color--white"><i>" I have purchased many great templates over the years but this product and this company have taken it to the next level. Exceptional customizability. "</i></p>
+                                </div>
+                                <div class="center-block g-hor-divider__solid--white-opacity-lightest g-width-100--xs g-margin-b-30--xs"></div>
+                                <h4 class="g-font-size-15--xs g-font-size-18--sm g-color--white-opacity-light g-margin-b-5--xs">Jake Richardson / Google</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-slide g-padding-x-130--sm g-padding-x-150--lg">
+                            <div class="g-padding-x-20--xs g-padding-x-50--lg">
+                                <div class="g-margin-b-40--xs">
+                                    <p class="g-font-size-22--xs g-font-size-28--sm g-color--white"><i>" I have purchased many great templates over the years but this product and this company have taken it to the next level. Exceptional customizability. "</i></p>
+                                </div>
+                                <div class="center-block g-hor-divider__solid--white-opacity-lightest g-width-100--xs g-margin-b-30--xs"></div>
+                                <h4 class="g-font-size-15--xs g-font-size-18--sm g-color--white-opacity-light g-margin-b-5--xs">Jake Richardson / Google</h4>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="g-font-size-22--xs g-color--white-opacity js__swiper-fraction"></div>
+                    <a href="javascript:void(0);" class="g-display-none--xs g-display-inline-block--sm s-swiper__arrow-v1--right s-icon s-icon--md s-icon--white-brd g-radius--circle ti-angle-right js__swiper-btn--next"></a>
+                    <a href="javascript:void(0);" class="g-display-none--xs g-display-inline-block--sm s-swiper__arrow-v1--left s-icon s-icon--md s-icon--white-brd g-radius--circle ti-angle-left js__swiper-btn--prev"></a>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="g-bg-color--sky-light">
+            <div class="g-container--md g-padding-y-80--xs g-padding-y-125--sm">
+
+                <div class="s-swiper js__swiper-clients">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".1s">
+                                <img class="s-clients-v1" src="img/clients/01-dark.png" alt="Clients Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".2s">
+                                <img class="s-clients-v1" src="img/clients/02-dark.png" alt="Clients Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".3s">
+                                <img class="s-clients-v1" src="img/clients/03-dark.png" alt="Clients Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".4s">
+                                <img class="s-clients-v1" src="img/clients/04-dark.png" alt="Clients Logo">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="wow fadeIn" data-wow-duration=".3" data-wow-delay=".5s">
+                                <img class="s-clients-v1" src="img/clients/05-dark.png" alt="Clients Logo">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="container g-padding-y-80--xs g-padding-y-125--sm" id="blgbavck">
+            <div class="g-text-center--xs g-margin-b-80--xs">
+                <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2 g-margin-b-25--xs">Blog</p>
+                <h2 class="g-font-size-32--xs g-font-size-36--md" style="font-family: 'Bad Script', cursive; color:white;">Latest News</h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-4 g-margin-b-30--xs g-margin-b-0--md">
+
+                    <article>
+                        <img class="img-responsive" src="img/970x970/01.jpg" alt="Image">
+                        <div class="g-bg-color--white g-box-shadow__dark-lightest-v2 g-text-center--xs g-padding-x-40--xs g-padding-y-40--xs">
+                            <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2">News</p>
+                            <h3 class="g-font-size-22--xs g-letter-spacing--1"><a href="http://keenthemes.com/">Create Something Great.</a></h3>
+                            <p>The time has come to bring those ideas and plans to life.</p>
+                        </div>
+                    </article>
+
+                </div>
+                <div class="col-sm-4 g-margin-b-30--xs g-margin-b-0--md">
+
+                    <article>
+                        <img class="img-responsive" src="img/970x970/02.jpg" alt="Image">
+                        <div class="g-bg-color--white g-box-shadow__dark-lightest-v2 g-text-center--xs g-padding-x-40--xs g-padding-y-40--xs">
+                            <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2">News</p>
+                            <h3 class="g-font-size-22--xs g-letter-spacing--1"><a href="http://keenthemes.com/">Jacks of All. Experts in All.</a></h3>
+                            <p>The time has come to bring those ideas and plans to life.</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-sm-4">
+                    <article>
+                        <img class="img-responsive" src="img/970x970/03.jpg" alt="Image">
+                        <div class="g-bg-color--white g-box-shadow__dark-lightest-v2 g-text-center--xs g-padding-x-40--xs g-padding-y-40--xs">
+                            <p class="text-uppercase g-font-size-14--xs g-font-weight--700 g-color--primary g-letter-spacing--2">News</p>
+                            <h3 class="g-font-size-22--xs g-letter-spacing--1"><a href="http://keenthemes.com/">Finding your Perfect Place.</a></h3>
+                            <p>The time has come to bring those ideas and plans to life.</p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="js__parallax-window" style="background: url(image/DSCN0557.JPG) 50% 0 no-repeat fixed;">
+            <div class="container g-padding-y-80--xs g-padding-y-125--sm">
+                <div class="row">
+                    <div class="col-md-3 col-xs-6 g-full-width--xs g-margin-b-70--xs g-margin-b-0--lg">
+                        <div class="g-text-center--xs">
+                            <div class="g-margin-b-10--xs">
+                                <figure class="g-display-inline-block--xs g-font-size-70--xs g-color--white js__counter">6</figure>
+                                <span class="g-font-size-40--xs g-color--white">k</span>
+                            </div>
+                            <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
+                            <h4 class="g-font-size-18--xs g-color--white">Lines of Code</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 g-full-width--xs g-margin-b-70--xs g-margin-b-0--lg">
+                        <div class="g-text-center--xs">
+                            <figure class="g-display-block--xs g-font-size-70--xs g-color--white g-margin-b-10--xs js__counter">5</figure>
+                            <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
+                            <h4 class="g-font-size-18--xs g-color--white">Award Winners</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 g-full-width--xs g-margin-b-70--xs g-margin-b-0--sm">
+                        <div class="g-text-center--xs">
+                            <figure class="g-display-block--xs g-font-size-70--xs g-color--white g-margin-b-10--xs js__counter">15</figure>
+                            <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
+                            <h4 class="g-font-size-18--xs g-color--white">Multiple Pages</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-xs-6 g-full-width--xs">
+                        <div class="g-text-center--xs">
+                            <div class="g-margin-b-10--xs">
+                                <figure class="g-display-inline-block--xs g-font-size-70--xs g-color--white js__counter">2</figure>
+                                <span class="g-font-size-40--xs g-color--white">x</span>
+                            </div>
+                            <div class="center-block g-hor-divider__solid--white g-width-40--xs g-margin-b-25--xs"></div>
+                            <h4 class="g-font-size-18--xs g-color--white">Faster Support</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+      
+        <footer class="g-bg-color--dark">
+          
+            
+            <div class="container g-padding-y-50--xs">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <a href="index.html">
+                            <img class=" g-height-auto--xs" src="img/logo.png" alt="Megakit Logo">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 g-text-right--xs">
+                        <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity-light"><a href="http://keenthemes.com/preview/Megakit/">Kritanj</a> Designed with  &#10084; by <a href="#">Samadrit das &nbsp</a><a href="#">Soura bose</a></p>
+                    </div>
+                </div>
+            </div>
+           
+        </footer>
+      
+
+<style>
+
+</style>
+        <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a>
+
+        <script type="text/javascript" src="vendor/jquery.min.js"></script>
+        <script type="text/javascript" src="vendor/jquery.migrate.min.js"></script>
+        <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="vendor/jquery.back-to-top.min.js"></script>
+        <script type="text/javascript" src="vendor/scrollbar/jquery.scrollbar.min.js"></script>
+        <script type="text/javascript" src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+        <script type="text/javascript" src="vendor/swiper/swiper.jquery.min.js"></script>
+        <script type="text/javascript" src="vendor/waypoint.min.js"></script>
+        <script type="text/javascript" src="vendor/counterup.min.js"></script>
+        <script type="text/javascript" src="vendor/cubeportfolio/js/jquery.cubeportfolio.min.js"></script>
+        <script type="text/javascript" src="vendor/jquery.parallax.min.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBsXUGTFS09pLVdsYEE9YrO2y4IAncAO2U"></script>
+        <script type="text/javascript" src="vendor/jquery.wow.min.js"></script>
+
+        <!-- General Components and Settings -->
+        <script type="text/javascript" src="js/global.min.js"></script>
+        <script type="text/javascript" src="js/components/header-sticky.min.js"></script>
+        <script type="text/javascript" src="js/components/scrollbar.min.js"></script>
+        <script type="text/javascript" src="js/components/magnific-popup.min.js"></script>
+        <script type="text/javascript" src="js/components/swiper.min.js"></script>
+        <script type="text/javascript" src="js/components/counter.min.js"></script>
+        <script type="text/javascript" src="js/components/portfolio-3-col.min.js"></script>
+        <script type="text/javascript" src="js/components/parallax.min.js"></script>
+        <script type="text/javascript" src="js/components/google-map.min.js"></script>
+        <script type="text/javascript" src="js/components/wow.min.js"></script>
+      <script type="text/javascript">
+        const glitchwrapper = document.querySelector('.glitchwrapper');
+      
+          const fadeOutEffect = () =>setInterval(() => {
+  if (!glitchwrapper.style.opacity) {
+    glitchwrapper .style.opacity = 1;
+  }
+  if (glitchwrapper .style.opacity > 0) {
+    glitchwrapper.style.opacity -= 0.1;
+   //
+  } else {
+    //console.log("called");
+    clearInterval(fadeOutEffect);
+     glitchwrapper.style.display = "none";
+  }
+}, 500);
+
+           window.addEventListener('load', fadeOutEffect);
+      </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
+<script>
+    
+VANTA.GLOBE({
+  el: "#heromation",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+})
+VANTA.BIRDS({
+  el: "#blgbavck",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundColor: 0x23153c
+})
+</script>
+    </body>
+    <!-- End Body -->
+</html>

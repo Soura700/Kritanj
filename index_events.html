@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" class="no-js">
-
+    <!-- Begin Head -->
     <head>
-
+        <!-- Basic -->
         <meta charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -331,11 +331,20 @@
     .dropdown-menu{
         margin-top: 0;
     }
-           
-     btn:hover{
+
+
+    .btn:hover{
         color: aqua !important;
-     }
+       }
+    .btn{
+        border: none;
+    }
+    .btn :focus{
+        border: none;
+        outline: none;
+    }
    </style>
+
    <script>
     $(document).ready(function(){
     $(".dropdown").hover(function(){
@@ -347,12 +356,14 @@
 });    
    </script>
     </head>
+    <!-- End Head -->
 
+    <!-- Body -->
     <body id="bdback">
   <div class="glitchwrapper">
    <div class="glitch" data-glitch="KRITANJ">KRITANJ</div>
 </div>
-
+        <!--========== HEADER ==========-->
         <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
             <!-- Navbar -->
             <div class="s-header__navbar">
@@ -370,24 +381,26 @@
                             <!-- End Logo -->
                         </div>
                         <div class="s-header__navbar-row-col">
-
+                            <!-- Trigger -->
                             <a href="javascript:void(0);" class="s-header__trigger js__trigger">
                                 <span class="s-header__trigger-icon"></span>
                                 <svg x="0rem" y="0rem" width="3.125rem" height="3.125rem" viewbox="0 0 54 54">
                                     <circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
                                 </svg>
                             </a>
-
+                            <!-- End Trigger -->
                         </div>
                     </div>
                 </div>
             </div>
+            <!-- End Navbar -->
 
+            <!-- Overlay -->
             <div class="s-header-bg-overlay js__bg-overlay">
-
+                <!-- Nav -->
                 <nav class="s-header__nav js__scrollbar">
                     <div class="container-fluid">
-                             
+                        <!-- Menu List -->                                
                         <ul class="list-unstyled s-header__nav-menu">
                             <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active" href="">events</a></li>
                             <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
@@ -408,14 +421,17 @@
                             <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
                             <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">lorem</a></li>
                         </ul>
+                        <!-- End Menu List -->
                     </div>
                 </nav>
-
+                <!-- End Nav -->
+                
+                <!-- Action -->
                 <ul class="list-inline s-header__action s-header__action--lb">
                     <li class="s-header__action-item"><a class="s-header__action-link -is-active" href="#">En</a></li>
                     <li class="s-header__action-item"><a class="s-header__action-link" href="#">Fr</a></li>
                 </ul>
-
+                <!-- End Action -->
 
                 <!-- Action -->
                 <ul class="list-inline s-header__action s-header__action--rb">
@@ -438,10 +454,13 @@
                         </a>
                     </li>
                 </ul>
+                <!-- End Action -->
             </div>
-
+            <!-- End Overlay -->
         </header>
+        <!--========== END HEADER ==========-->
 
+        <!--========== SWIPER SLIDER ==========-->
         <div class="s-swiper ">
             <!-- Swiper Wrapper -->
             <div class="swiper-wrapper">
@@ -471,6 +490,7 @@
                 <p class="text-uppercase g-color--white g-letter-spacing--3 g-margin-b-0--xs">Register now</p>
             </a>
         </div>
+        <!-- Portfolio Filter -->
         <div class="container g-padding-y-80--xs" id="js__scroll-to-section">
             <div class="g-text-center--xs g-margin-b-40--xs">
                 <h2 class=" g-color--primary" style="font-family: 'Bad Script', cursive;font-size:56px;">Events</h2>
@@ -480,7 +500,7 @@
                     <!-- <div data-filter="*" class="s-portfolio__filter-v1-item cbp-filter-item cbp-filter-item-active">Show All</div> -->
                     <!-- Drop Down  -->
                     <div class="dropdown s-portfolio__filter-v1-item cbp-filter-item">
-                        <button class="btn btn-secondary dropdown-toggle" style="background: none; border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <button class="btn btn-secondary dropdown-toggle" style="background: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Games
                         </button>
                         <ul class="dropdown-menu">
@@ -515,7 +535,9 @@
                 </div>                
             </div>
         </div>
+        <!-- End Portfolio Filter -->
 
+        <!-- Portfolio Gallery -->
         <div class="container g-margin-b-100--xs">
             <div id="js__grid-portfolio-gallery" class="cbp">
                 <!-- Item -->
@@ -542,7 +564,7 @@
                         </ul>
                     </div>
                 </div>
-
+                <!-- Item -->
                 <div class="s-portfolio__item cbp-item games">
                     <div class="s-portfolio__img-effect">
                         <img src="img/970x647/03.jpg" alt="Portfolio Image">
@@ -566,7 +588,7 @@
                         </ul>
                     </div>
                 </div>
-
+                <!-- Item -->
                 <div class="s-portfolio__item cbp-item exhibition">
                     <div class="s-portfolio__img-effect">
                         <img src="img/970x647/02.jpg" alt="Portfolio Image">
@@ -590,7 +612,7 @@
                         </ul>
                     </div>
                 </div>
-
+                <!-- Item -->
                 <div class="s-portfolio__item cbp-item compete games">
                     <div class="s-portfolio__img-effect">
                         <img src="img/970x647/01.jpg" alt="Portfolio Image">
@@ -614,7 +636,7 @@
                         </ul>
                     </div>
                 </div>
-
+                <!-- Item -->
                 <div class="s-portfolio__item cbp-item exhibition games">
                     <div class="s-portfolio__img-effect">
                         <img src="img/970x647/09.jpg" alt="Portfolio Image">
@@ -638,7 +660,7 @@
                         </ul>
                     </div>
                 </div>
-
+                <!-- Item -->
                 <div class="s-portfolio__item cbp-item compete games">
                     <div class="s-portfolio__img-effect">
                         <img src="img/970x647/05.jpg" alt="Portfolio Image">
@@ -666,7 +688,7 @@
             </div>
             <!-- End Portfolio Gallery -->
         </div>
-
+        <!-- End Portfolio -->
 
 
 

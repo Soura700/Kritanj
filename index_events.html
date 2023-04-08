@@ -39,6 +39,7 @@
         <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
 
         <link rel="stylesheet" href="font.css">
+        <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
      
        <style> @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
   .glitchwrapper {
@@ -588,15 +589,15 @@
             </a>
         </div>
         <!-- Portfolio Filter -->
-        <div class="container g-padding-y-80--xs" id="js__scroll-to-section">
+        <div  class="container g-padding-y-80--xs" id="js__scroll-to-section" >
             <div class="g-text-center--xs g-margin-b-40--xs">
-                <h2 class=" g-color--primary" style="font-family: 'Bad Script', cursive;font-size:56px;">Events</h2>
+                <h2 class=" g-color--primary" style="font-family: 'Bad Script', cursive;font-size:56px;" data-aos="zoom-in">Events</h2>
             </div>
             <div class="s-portfolio">
                 <div id="js__filters-portfolio-gallery" class="s-portfolio__filter-v1 cbp-l-filters-text cbp-l-filters-center">
                     <!-- <div data-filter="*" class="s-portfolio__filter-v1-item cbp-filter-item cbp-filter-item-active">Show All</div> -->
                     <!-- Drop Down  -->
-                    <div class="dropdown s-portfolio__filter-v1-item cbp-filter-item">
+                    <div class="dropdown dropdown-center s-portfolio__filter-v1-item cbp-filter-item">
                         <!-- <button class="btn btn-secondary dropdown-toggle" style="background: none;border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Coding
                         </button> -->
@@ -607,26 +608,26 @@
                               <span></span>
                               Coding
                             </a>
-                        <ul class="dropdown-menu" style="background-color: transparent;">
-                            <li class="li" onclick="coding()">
-                                <div  data-filter=".compete" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Coding</div>
+                        <ul class="dropdown-menu" id="drop" style="background-color: #201436;" aria-labelledby="dropdownMenuButton">
+                            <li class="li dropdown-item" onclick="coding()">
+                                <div  data-filter=".compete" class="li s-portfolio__filter-v1-item cbp-filter-item">Coding</div>
                             </li>
-                            <li class="li" onclick="robotics()">
+                            <li class="li dropdown-item" onclick="robotics()">
                                 <div  data-filter=".compete" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Robotics</div>
                             </li>
-                            <li onclick="games()">
+                            <li class="li dropdown-item" onclick="games()">
                                 <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Games</div>
                             </li>
-                            <li onclick="civil()">
+                            <li class="li dropdown-item" onclick="civil()">
                                 <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Civil Creation</div>
                             </li>
-                            <li onclick="project()">
+                            <li class="li dropdown-item" onclick="project()">
                                 <div  data-filter=".exhibition" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Project Exhibition</div>
                             </li>
-                            <li onclick="fun()">
+                            <li class="li dropdown-item" onclick="fun()">
                                 <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Fun Events</div>
                             </li>
-                            <li onclick="electron()">
+                            <li class="li dropdown-item" onclick="electron()">
                                 <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Elek-Tron</div>
                             </li>
                         </ul>
@@ -658,7 +659,7 @@
             </div>
         </div>
 
-        <div class="container g-margin-b-100--xs">
+        <div class="container g-margin-b-100--xs" style="margin-top: 124px;">
             <div id="js__grid-portfolio-gallery" class="cbp">
                 <!-- Item -->
                 <div class="s-portfolio__item cbp-item exhibition compete">
@@ -940,6 +941,10 @@ VANTA.BIRDS({
         let change=document.getElementById('changeevent')
         change.innerText='Electron'
     } 
+</script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
 </script>
     </body>
     <!-- End Body -->

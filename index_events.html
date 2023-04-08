@@ -608,27 +608,25 @@
                               Coding
                             </button>
                         <div class="dropdown-menu" style="background-color: transparent;" aria-labelledby="dropdownMenuButton">
-                            <div data-filter=".compete" class="dropdown-item s-portfolio__filter-v1-item cbp-filter-item">
+                            <div onclick="coding()" data-filter=".compete" class="dropdown-item s-portfolio__filter-v1-item cbp-filter-item">
                                 Coding
                             </div>
                             
-                                <div  data-filter=".compete" class="dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Robotics</div>
+                                <div  onclick="robotics()" data-filter=".robotics" class="dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Robotics</div>
                             
                            
-                                <div  data-filter=".games" class="dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Games</div>
+                                <div  onclick="games()" data-filter=".games" class="dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Games</div>
                             
-<!--                             <li onclick="civil()">
-                                <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Civil Creation</div>
-                            </li>
-                            <li onclick="project()">
-                                <div  data-filter=".exhibition" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Project Exhibition</div>
-                            </li>
-                            <li onclick="fun()">
-                                <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Fun Events</div>
-                            </li>
-                            <li onclick="electron()">
-                                <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Elek-Tron</div>
-                            </li> -->
+                            
+                                <div  onclick="civil()" data-filter=".civil" class="dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Civil Creation</div>
+                            
+                            
+                                <div  onclick="project()" data-filter=".project" class="dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Project Exhibition</div>
+                            
+                                <div  onclick="fun()" data-filter=".fun" class="dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Fun Events</div>
+                            
+                                <div  onclick="electron()" data-filter=".electron" class="dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Elek-Tron</div>
+                            
                         </div>
                     </div>
                     <!-- <div class="dropdown s-portfolio__filter-v1-item cbp-filter-item">
@@ -913,31 +911,31 @@ VANTA.BIRDS({
 </script>
 <script>
     robotics=()=>{
-        let change=document.getElementById('changeevent')
+        let change=document.getElementById('dropdownMenuButton')
         change.innerText='Robotics'
     } 
     coding=()=>{
-        let change=document.getElementById('changeevent')
+        let change=document.getElementById('dropdownMenuButton')
         change.innerText='Coding'
     } 
     games=()=>{
-        let change=document.getElementById('changeevent')
+        let change=document.getElementById('dropdownMenuButton')
         change.innerText='Games'
     } 
     civil=()=>{
-        let change=document.getElementById('changeevent')
+        let change=document.getElementById('dropdownMenuButton')
         change.innerText='Civil Creations'
     } 
     fun=()=>{
-        let change=document.getElementById('changeevent')
+        let change=document.getElementById('dropdownMenuButton')
         change.innerText='Fun Events'
     } 
     project=()=>{
-        let change=document.getElementById('changeevent')
+        let change=document.getElementById('dropdownMenuButton')
         change.innerText='Project Exibition'
     } 
     electron=()=>{
-        let change=document.getElementById('changeevent')
+        let change=document.getElementById('dropdownMenuButton')
         change.innerText='Electron'
     } 
 </script>

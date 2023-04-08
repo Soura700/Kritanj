@@ -607,12 +607,19 @@
                               <span></span>
                               <span></span>
                               Coding
-                            </a>
-                        <ul class="dropdown-menu" id="drop" style="background-color: #201436;" aria-labelledby="dropdownMenuButton">
-                            <li class="li dropdown-item" onclick="coding()">
+                            </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="drop" style="background-color: #201436;" >
+                            <div data-filter=".compete" onclick="coding()" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Coding</div>
+                            <!-- <li class="li dropdown-item" onclick="coding()">
                                 <div  data-filter=".compete" class="li s-portfolio__filter-v1-item cbp-filter-item">Coding</div>
-                            </li>
-                            <li class="li dropdown-item" onclick="robotics()">
+                            </li> -->
+                            <li></li><div data-filter=".robotics" onclick="robotics()" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Robotics</div></li>
+                            <li></li><div data-filter=".games" onclick="games()" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Games</div></li>
+                            <li></li><div data-filter=".civil" onclick="civil()" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Civil Creation</div></li>
+                            <li></li><div data-filter=".exhibition" onclick="project()" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Project Exhibition</div></li>
+                            <li></li><div data-filter=".fun" onclick="fun()" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Fun Events</div></li>
+                            <li></li><div data-filter=".electron" onclick="electron()" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Elek-Tron</div></li>
+                            <!-- <li class="li dropdown-item" onclick="robotics()">
                                 <div  data-filter=".compete" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Robotics</div>
                             </li>
                             <li class="li dropdown-item" onclick="games()">
@@ -629,8 +636,8 @@
                             </li>
                             <li class="li dropdown-item" onclick="electron()">
                                 <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Elek-Tron</div>
-                            </li> 
-                        </div>
+                            </li>  -->
+                        </ul>
                     </div>
                     <!-- <div class="dropdown s-portfolio__filter-v1-item cbp-filter-item">
                         <button class="btn btn-secondary dropdown-toggle" style="background: none; border: none;"  type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -734,7 +741,30 @@
                     </div>
                 </div>
                 <!-- Item -->
-                <div class="s-portfolio__item cbp-item compete games">
+                <div class="s-portfolio__item cbp-item compete civil">
+                    <div class="s-portfolio__img-effect">
+                        <img src="img/970x647/01.jpg" alt="Portfolio Image">
+                    </div>
+                    <div class="s-portfolio__caption-hover--cc">
+                        <div class="g-margin-b-25--xs">
+                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
+                            <p class="g-color--white-opacity">for kritanj.techfest</p>
+                        </div>
+                        <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+                            <li>
+                                <a href="img/970x647/08.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> for kritanj.techfest">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
+                                    <i class="ti-link"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="s-portfolio__item cbp-item compete robotics">
                     <div class="s-portfolio__img-effect">
                         <img src="img/970x647/01.jpg" alt="Portfolio Image">
                     </div>
@@ -781,8 +811,31 @@
                         </ul>
                     </div>
                 </div>
+                <div class="s-portfolio__item cbp-item exhibition electron">
+                    <div class="s-portfolio__img-effect">
+                        <img src="img/970x647/09.jpg" alt="Portfolio Image">
+                    </div>
+                    <div class="s-portfolio__caption-hover--cc">
+                        <div class="g-margin-b-25--xs">
+                            <h4 class="g-font-size-18--xs g-color--white g-margin-b-5--xs">Portfolio Item</h4>
+                            <p class="g-color--white-opacity">for kritanj.techfest</p>
+                        </div>
+                        <ul class="list-inline g-ul-li-lr-5--xs g-margin-b-0--xs">
+                            <li>
+                                <a href="img/970x647/09.jpg" class="cbp-lightbox s-icon s-icon--sm s-icon--white-bg g-radius--circle" data-title="Portfolio Item <br/> for kritanj.techfest">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="s-icon s-icon--sm s-icon s-icon--white-bg g-radius--circle">
+                                    <i class="ti-link"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
                 <!-- Item -->
-                <div class="s-portfolio__item cbp-item compete games">
+                <div class="s-portfolio__item cbp-item compete fun">
                     <div class="s-portfolio__img-effect">
                         <img src="img/970x647/05.jpg" alt="Portfolio Image">
                     </div>
@@ -914,31 +967,31 @@ VANTA.BIRDS({
 </script>
 <script>
     robotics=()=>{
-        let change=document.getElementById('changeevent')
+        let change=document.getElementById('dropdownMenuButton')
         change.innerText='Robotics'
     } 
     coding=()=>{
-        let change=document.getElementById('changeevent')
+        let change=document.getElementById('dropdownMenuButton')
         change.innerText='Coding'
     } 
     games=()=>{
-        let change=document.getElementById('changeevent')
+        let change=document.getElementById('dropdownMenuButton')
         change.innerText='Games'
     } 
     civil=()=>{
-        let change=document.getElementById('changeevent')
+        let change=document.getElementById('dropdownMenuButton')
         change.innerText='Civil Creations'
     } 
     fun=()=>{
-        let change=document.getElementById('changeevent')
+        let change=document.getElementById('dropdownMenuButton')
         change.innerText='Fun Events'
     } 
     project=()=>{
-        let change=document.getElementById('changeevent')
+        let change=document.getElementById('dropdownMenuButton')
         change.innerText='Project Exibition'
     } 
     electron=()=>{
-        let change=document.getElementById('changeevent')
+        let change=document.getElementById('dropdownMenuButton')
         change.innerText='Electron'
     } 
 </script>

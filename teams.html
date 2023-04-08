@@ -29,6 +29,9 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Bad+Script&display=swap');
+        body{
+            overflow-x: hidden;
+          }
     </style>
 
 </head>
@@ -52,7 +55,7 @@
 
                         <a href="javascript:void(0);" class="s-header__trigger js__trigger">
                             <span class="s-header__trigger-icon"></span>
-                            <svg x="0rem" y="0rem" width="3.125rem" height="3.125rem" viewbox="0 0 54 54">
+                            <svg x="0rem" y="0rem" width="3.125rem" height="3.125rem" viewbox="0 0 54 54" onclick="audioPlay()">
                                 <circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25"
                                     stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
                             </svg>
@@ -240,25 +243,6 @@
     <script type="text/javascript" src="js/components/parallax.min.js"></script>
     <script type="text/javascript" src="js/components/google-map.min.js"></script>
     <script type="text/javascript" src="js/components/wow.min.js"></script>
-    <script type="text/javascript">
-        const glitchwrapper = document.querySelector('.glitchwrapper');
-
-        const fadeOutEffect = () => setInterval(() => {
-            if (!glitchwrapper.style.opacity) {
-                glitchwrapper.style.opacity = 1;
-            }
-            if (glitchwrapper.style.opacity > 0) {
-                glitchwrapper.style.opacity -= 0.1;
-                //
-            } else {
-                //console.log("called");
-                clearInterval(fadeOutEffect);
-                glitchwrapper.style.display = "none";
-            }
-        }, 500);
-
-        window.addEventListener('load', fadeOutEffect);
-    </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.birds.min.js"></script>
@@ -288,6 +272,10 @@
             scaleMobile: 1.00,
             backgroundColor: 0x23153c
         })
+        audioPlay=()=>{
+            let audio=new Audio('clicksound.mp3')
+            audio.play();
+        }  
     </script>
 
 </body>

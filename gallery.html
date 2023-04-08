@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Kritanj-Gallery</title>
 
     <link
       rel="stylesheet"
@@ -59,6 +59,7 @@
     <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
 
     <link rel="stylesheet" href="font.css" />
+    <link rel="icon" href="img/logo.png">
 
     <!-- Gallery -->
     <link
@@ -570,6 +571,9 @@
       -webkit-transition: 2s;
       transition: 2s;
     }
+    body{
+      overflow-x: hidden;
+    }
 
     /*	end gallery */
   </style>
@@ -606,490 +610,344 @@
     });
   </script>
   <body id="bdback">
-    <header
-      class="navbar-fixed-top s-header js__header-sticky js__header-overlay"
-    >
+    <header class="navbar-fixed-top s-header js__header-sticky js__header-overlay">
       <div class="s-header__navbar">
-        <div class="s-header__container">
-          <div class="s-header__navbar-row">
-            <div class="s-header__navbar-row-col">
-              <div class="s-header__logo">
-                <a href="index.html" class="s-header__logo-link">
-                  <img
-                    class="s-header__logo-img s-header__logo-img-default"
-                    src="img/logo.png"
-                    alt="kritanj Logo"
-                  />
-                  <img
-                    class="s-header__logo-img s-header__logo-img-shrink"
-                    src="img/logo-dark.png"
-                    alt="kritanj Logo"
-                  />
-                </a>
+          <div class="s-header__container">
+              <div class="s-header__navbar-row">
+                  <div class="s-header__navbar-row-col">
+                      <div class="s-header__logo">
+                          <a href="index.html" class="s-header__logo-link">
+                              <img class="s-header__logo-img s-header__logo-img-default" src="img/logo.png" alt="kritanj Logo">
+                              <img class="s-header__logo-img s-header__logo-img-shrink" src="img/logo-dark.png" alt="kritanj Logo">
+                          </a>
+                      </div>
+                  </div>
+                  <div class="s-header__navbar-row-col">
+
+                      <a href="javascript:void(0);" class="s-header__trigger js__trigger">
+                          <span class="s-header__trigger-icon"></span>
+                          <svg x="0rem" y="0rem" width="3.125rem" height="3.125rem" viewbox="0 0 54 54" onclick="audioPlay()">
+                              <circle fill="transparent" stroke="#fff" stroke-width="1" cx="27" cy="27" r="25" stroke-dasharray="157 157" stroke-dashoffset="157"></circle>
+                          </svg>
+                      </a>
+
+                  </div>
               </div>
-            </div>
-            <div class="s-header__navbar-row-col">
-              <a
-                href="javascript:void(0);"
-                class="s-header__trigger js__trigger"
-              >
-                <span class="s-header__trigger-icon"></span>
-                <svg
-                  x="0rem"
-                  y="0rem"
-                  width="3.125rem"
-                  height="3.125rem"
-                  viewbox="0 0 54 54"
-                >
-                  <circle
-                    fill="transparent"
-                    stroke="#fff"
-                    stroke-width="1"
-                    cx="27"
-                    cy="27"
-                    r="25"
-                    stroke-dasharray="157 157"
-                    stroke-dashoffset="157"
-                  ></circle>
-                </svg>
-              </a>
-            </div>
           </div>
-        </div>
       </div>
+
       <div class="s-header-bg-overlay js__bg-overlay">
-        <nav class="s-header__nav js__scrollbar">
-          <div class="container-fluid">
-            <ul class="list-unstyled s-header__nav-menu">
-              <li class="s-header__nav-menu-item">
-                <a
-                  class="s-header__nav-menu-link s-header__nav-menu-link-divider -is-active"
-                  href=""
-                  >events</a
-                >
-              </li>
-              <li class="s-header__nav-menu-item">
-                <a
-                  class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                  href=""
-                  >lorem</a
-                >
-              </li>
-              <li class="s-header__nav-menu-item">
-                <a
-                  class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                  href=""
-                  >lorem</a
-                >
-              </li>
-              <li class="s-header__nav-menu-item">
-                <a
-                  class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                  href=""
-                  >lorem</a
-                >
-              </li>
-              <li class="s-header__nav-menu-item">
-                <a
-                  class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                  href=""
-                  >lorem</a
-                >
-              </li>
-              <li class="s-header__nav-menu-item">
-                <a
-                  class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                  href=""
-                  >lorem</a
-                >
-              </li>
-              <li class="s-header__nav-menu-item">
-                <a
-                  class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                  href=""
-                  >lorem</a
-                >
-              </li>
-            </ul>
-            <ul class="list-unstyled s-header__nav-menu">
-              <li class="s-header__nav-menu-item">
-                <a
-                  class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                  href=""
-                  >lorem</a
-                >
-              </li>
-              <li class="s-header__nav-menu-item">
-                <a
-                  class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                  href=""
-                  >lorem</a
-                >
-              </li>
-              <li class="s-header__nav-menu-item">
-                <a
-                  class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                  href=""
-                  >lorem</a
-                >
-              </li>
-              <li class="s-header__nav-menu-item">
-                <a
-                  class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                  href=""
-                  >lorem</a
-                >
-              </li>
-              <li class="s-header__nav-menu-item">
-                <a
-                  class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                  href=""
-                  >lorem</a
-                >
-              </li>
-              <li class="s-header__nav-menu-item">
-                <a
-                  class="s-header__nav-menu-link s-header__nav-menu-link-divider"
-                  href=""
-                  >lorem</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-        <ul class="list-inline s-header__action s-header__action--lb">
-          <li class="s-header__action-item">
-            <a class="s-header__action-link -is-active" href="#">En</a>
-          </li>
-          <li class="s-header__action-item">
-            <a class="s-header__action-link" href="#">Fr</a>
-          </li>
-        </ul>
-        <ul class="list-inline s-header__action s-header__action--rb">
-          <li class="s-header__action-item">
-            <a class="s-header__action-link" href="#">
-              <i class="g-padding-r-5--xs ti-facebook"></i>
-              <span class="g-display-none--xs g-display-inline-block--sm"
-                >Facebook</span
-              >
-            </a>
-          </li>
-          <li class="s-header__action-item">
-            <a class="s-header__action-link" href="#">
-              <i class="g-padding-r-5--xs ti-twitter"></i>
-              <span class="g-display-none--xs g-display-inline-block--sm"
-                >Twitter</span
-              >
-            </a>
-          </li>
-          <li class="s-header__action-item">
-            <a class="s-header__action-link" href="#">
-              <i class="g-padding-r-5--xs ti-instagram"></i>
-              <span class="g-display-none--xs g-display-inline-block--sm"
-                >Instagram</span
-              >
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
 
-    <div class="s-swiper">
+          <nav class="s-header__nav js__scrollbar">
+              <div class="container-fluid">
+                       
+                  <ul class="list-unstyled s-header__nav-menu">
+                      <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index.html">Home</a></li>
+                      <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="index_events.html">Events</a></li>
+                      <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="gallery.html">Gallery</a></li>
+                      <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="teams.html">Team</a></li>
+                      <li class="s-header__nav-menu-item"><a class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="">Contact Us</a></li>
+                  </ul>
+                  <!-- End Menu List -->
+
+              </div>
+          </nav>
+
+          <ul class="list-inline s-header__action s-header__action--lb">
+              <li class="s-header__action-item"><a class="s-header__action-link -is-active" href="#">En</a></li>
+              <li class="s-header__action-item"><a class="s-header__action-link" href="#">Fr</a></li>
+          </ul>
+
+          <ul class="list-inline s-header__action s-header__action--rb">
+              <li class="s-header__action-item">
+                  <a class="s-header__action-link" href="#">
+                      <i class="g-padding-r-5--xs ti-facebook"></i>
+                      <span class="g-display-none--xs g-display-inline-block--sm">Facebook</span>
+                  </a>
+              </li>
+              <li class="s-header__action-item">
+                  <a class="s-header__action-link" href="#">
+                      <i class="g-padding-r-5--xs ti-twitter"></i>
+                      <span class="g-display-none--xs g-display-inline-block--sm">Twitter</span>
+                  </a>
+              </li>
+              <li class="s-header__action-item">
+                  <a class="s-header__action-link" href="#">
+                      <i class="g-padding-r-5--xs ti-instagram"></i>
+                      <span class="g-display-none--xs g-display-inline-block--sm">Instagram</span>
+                  </a>
+              </li>
+          </ul>
+
+      </div>
+
+  </header>
+
+  <div class="s-swiper ">
+
       <div class="swiper-wrapper">
-        <div
-          class="g-fullheight--xs g-bg-position--center swiper-slide"
-          id="heromation"
-        >
-          <div class="container g-text-center--xs g-ver-center--xs">
-            <div class="g-margin-b-30--xs">
-              <h1
-                class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white"
-              >
-                <svg viewBox="0 0 1320 300" class="svg">
-                  <text
-                    x="50%"
-                    y="50%"
-                    dy=".35em"
-                    text-anchor="middle"
-                    style="
-                      font-family: 'SPACEARMOR', sans-serif;
-                      display: inline-block;
-                    "
-                  >
-                    KRITANJ
-                  </text>
-                </svg>
-              </h1>
-            </div>
+          <div class="g-fullheight--xs g-bg-position--center swiper-slide" id="heromation">
+              <div class="container g-text-center--xs g-ver-center--xs">
+                  <div class="g-margin-b-30--xs">
+
+                      <h1 class="g-font-size-35--xs g-font-size-45--sm g-font-size-55--md g-color--white">
+                        <svg viewBox="0 0 1320 300" class="svg">
+                          <text x="50%" y="50%" dy=".35em" text-anchor="middle" style="font-family: 'SPACEARMOR',sans-serif; display: inline-block;">
+                            KRITANJ
+                          </text>
+                        </svg>
+                      </h1>
+                  </div>
+                
+              </div>
           </div>
-        </div>
+       
       </div>
-      <a
-        href="#js__scroll-to-section"
-        class="s-scroll-to-section-v1--bc g-margin-b-15--xs"
-      >
-        <span
-          class="g-font-size-18--xs g-color--white ti-angle-double-down"
-        ></span>
-        <p
-          class="text-uppercase g-color--white g-letter-spacing--3 g-margin-b-0--xs"
-        >
-          Register now
-        </p>
+     
+      
+      <a href="index_events.html" class="s-scroll-to-section-v1--bc g-margin-b-15--xs">
+          <span class="g-font-size-18--xs g-color--white ti-angle-double-down"></span>
+          <p class="text-uppercase g-color--white g-letter-spacing--3 g-margin-b-0--xs">Register now</p>
       </a>
-    </div>
-    <section class="portfolio" id="portfolio">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="g-text-center--xs g-margin-b-40--xs">
-            <h2 class=" g-color--primary" style="font-family: 'Bad Script', cursive;font-size:56px;">Gallery</h2>
+  </div>
+  <section class="portfolio" id="portfolio">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="g-text-center--xs g-margin-b-40--xs">
+          <h2 class=" g-color--primary" style="font-family: 'Bad Script', cursive;font-size:56px;">Gallery</h2>
+      </div>
+
+        <br />
+
+        <div class="gallery_product col-sm-4 col-xs-12 mb-2 filter category1">
+          <a
+            class="fancybox"
+            rel="ligthbox"
+            href="image/gallary1.JPG"
+          >
+            <img
+              class="img-responsive"
+              alt=""
+              src="image/gallary1.JPG"
+            />
+            <!-- <div class="img-info">
+              <h4>Image Title 1</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> -->
+          </a>
         </div>
 
-          <div align="center">
-            <button class="filter-button" data-filter="all">All</button>
-            <button class="filter-button" data-filter="category1">
-              Designing
-            </button>
-            <button class="filter-button" data-filter="category2">
-              Development
-            </button>
-            <button class="filter-button" data-filter="category3">
-              Graphics
-            </button>
-          </div>
+        <div class="gallery_product col-sm-4 col-xs-12 mb-2 filter category2">
+          <a
+            class="fancybox"
+            rel="ligthbox"
+            href="image/gallary2.JPG"
+          >
+            <img
+              class="img-responsive"
+              alt=""
+              src="image/gallary2.JPG"
+            />
+            <!-- <div class="img-info">
+              <h4>Image Title 2</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> -->
+          </a>
+        </div>
 
-          <br />
+        <div class="gallery_product col-sm-4 col-xs-12 mb-2 filter category3">
+          <a
+            class="fancybox"
+            rel="ligthbox"
+            href="image/gallary3.JPG"
+          >
+            <img
+              class="img-responsive"
+              alt=""
+              src="image/gallary3.JPG"
+            />
+            <!-- <div class="img-info">
+              <h4>Image Title 3</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> -->
+          </a>
+        </div>
 
-          <div class="gallery_product col-sm-3 col-xs-6 filter category1">
-            <a
-              class="fancybox"
-              rel="ligthbox"
-              href="https://picsum.photos/400/250?image=122"
-            >
-              <img
-                class="img-responsive"
-                alt=""
-                src="https://picsum.photos/400/250?image=122"
-              />
-              <div class="img-info">
-                <h4>Image Title 1</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </a>
-          </div>
+        <div class="gallery_product col-sm-4 col-xs-12 mb-2 filter category1">
+          <a
+            class="fancybox"
+            rel="ligthbox"
+            href="image/gallary4.JPG"
+          >
+            <img
+              class="img-responsive"
+              alt=""
+              src="image/gallary4.JPG"
+            />
+            <!-- <div class="img-info">
+              <h4>Image Title 4</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> -->
+          </a>
+        </div>
 
-          <div class="gallery_product col-sm-3 col-xs-6 filter category2">
-            <a
-              class="fancybox"
-              rel="ligthbox"
-              href="https://picsum.photos/400/250?image=526"
-            >
-              <img
-                class="img-responsive"
-                alt=""
-                src="https://picsum.photos/400/250?image=526"
-              />
-              <div class="img-info">
-                <h4>Image Title 2</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </a>
-          </div>
+        <div class="gallery_product col-sm-4 col-xs-12 mb-2 filter category2">
+          <a
+            class="fancybox"
+            rel="ligthbox"
+            href="image/gallary5.JPG"
+          >
+            <img
+              class="img-responsive"
+              alt=""
+              src="image/gallary5.JPG"
+            />
+            <!-- <div class="img-info">
+              <h4>Image Title 5</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> -->
+          </a>
+        </div>
 
-          <div class="gallery_product col-sm-3 col-xs-6 filter category3">
-            <a
-              class="fancybox"
-              rel="ligthbox"
-              href="https://picsum.photos/400/250?image=626"
-            >
-              <img
-                class="img-responsive"
-                alt=""
-                src="https://picsum.photos/400/250?image=626"
-              />
-              <div class="img-info">
-                <h4>Image Title 3</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </a>
-          </div>
+        <div class="gallery_product col-sm-4 col-xs-12 mb-2 filter category3">
+          <a
+            class="fancybox"
+            rel="ligthbox"
+            href="image/gallary6.JPG"
+          >
+            <img
+              class="img-responsive"
+              alt=""
+              src="image/gallary6.JPG"
+            />
+            <!-- <div class="img-info">
+              <h4>Image Title 6</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> -->
+          </a>
+        </div>
 
-          <div class="gallery_product col-sm-3 col-xs-6 filter category1">
-            <a
-              class="fancybox"
-              rel="ligthbox"
-              href="https://picsum.photos/400/250?image=626"
-            >
-              <img
-                class="img-responsive"
-                alt=""
-                src="https://picsum.photos/400/250?image=626"
-              />
-              <div class="img-info">
-                <h4>Image Title 4</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </a>
-          </div>
+        <div class="gallery_product col-sm-4 col-xs-12 mb-2 filter category1">
+          <a
+            class="fancybox"
+            rel="ligthbox"
+            href="image/gallary7.JPG"
+          >
+            <img
+              class="img-responsive"
+              alt=""
+              src="image/gallary7.JPG"
+            />
+            <!-- <div class="img-info">
+              <h4>Image Title 7</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> -->
+          </a>
+        </div>
 
-          <div class="gallery_product col-sm-3 col-xs-6 filter category2">
-            <a
-              class="fancybox"
-              rel="ligthbox"
-              href="https://picsum.photos/400/250?image=486"
-            >
-              <img
-                class="img-responsive"
-                alt=""
-                src="https://picsum.photos/400/250?image=486"
-              />
-              <div class="img-info">
-                <h4>Image Title 5</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </a>
-          </div>
+        <div class="gallery_product col-sm-4 col-xs-12 mb-2 filter category2">
+          <a
+            class="fancybox"
+            rel="ligthbox"
+            href="image/gallary8.JPG"
+          >
+            <img
+              class="img-responsive"
+              alt=""
+              src="image/gallary8.JPG"
+            />
+            <!-- <div class="img-info">
+              <h4>Image Title 8</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> -->
+          </a>
+        </div>
 
-          <div class="gallery_product col-sm-3 col-xs-6 filter category3">
-            <a
-              class="fancybox"
-              rel="ligthbox"
-              href="https://picsum.photos/400/250?image=846"
-            >
-              <img
-                class="img-responsive"
-                alt=""
-                src="https://picsum.photos/400/250?image=846"
-              />
-              <div class="img-info">
-                <h4>Image Title 6</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </a>
-          </div>
+        <div class="gallery_product col-sm-4 col-xs-12 mb-2 filter category3">
+          <a
+            class="fancybox"
+            rel="ligthbox"
+            href="image/gallary9.JPG"
+          >
+            <img
+              class="img-responsive"
+              alt=""
+              src="image/gallary9.JPG"
+            />
+            <!-- <div class="img-info">
+              <h4>Image Title 9</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> -->
+          </a>
+        </div>
 
-          <div class="gallery_product col-sm-3 col-xs-6 filter category1">
-            <a
-              class="fancybox"
-              rel="ligthbox"
-              href="https://picsum.photos/400/250?image=1066"
-            >
-              <img
-                class="img-responsive"
-                alt=""
-                src="https://picsum.photos/400/250?image=1066"
-              />
-              <div class="img-info">
-                <h4>Image Title 7</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </a>
-          </div>
+        <div class="gallery_product col-sm-4 col-xs-12 mb-2 filter category1">
+          <a
+            class="fancybox"
+            rel="ligthbox"
+            href="image/gallary10.JPG"
+          >
+            <img
+              class="img-responsive"
+              alt=""
+              src="image/gallary10.JPG"
+            />
+            <!-- <div class="img-info">
+              <h4>Image Title 10</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> -->
+          </a>
+        </div>
 
-          <div class="gallery_product col-sm-3 col-xs-6 filter category2">
-            <a
-              class="fancybox"
-              rel="ligthbox"
-              href="https://picsum.photos/400/250?image=506"
-            >
-              <img
-                class="img-responsive"
-                alt=""
-                src="https://picsum.photos/400/250?image=506"
-              />
-              <div class="img-info">
-                <h4>Image Title 8</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </a>
-          </div>
+        <div class="gallery_product col-sm-4 col-xs-12 mb-2 filter category2">
+          <a
+            class="fancybox"
+            rel="ligthbox"
+            href="image/gallary11.JPG"
+          >
+            <img
+              class="img-responsive"
+              alt=""
+              src="image/gallary11.JPG"
+            />
+            <!-- <div class="img-info">
+              <h4>Image Title 11</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> -->
+          </a>
+        </div>
 
-          <div class="gallery_product col-sm-3 col-xs-6 filter category3">
-            <a
-              class="fancybox"
-              rel="ligthbox"
-              href="https://picsum.photos/400/250?image=1026"
-            >
-              <img
-                class="img-responsive"
-                alt=""
-                src="https://picsum.photos/400/250?image=1026"
-              />
-              <div class="img-info">
-                <h4>Image Title 9</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="gallery_product col-sm-3 col-xs-6 filter category1">
-            <a
-              class="fancybox"
-              rel="ligthbox"
-              href="https://picsum.photos/400/250?image=1077"
-            >
-              <img
-                class="img-responsive"
-                alt=""
-                src="https://picsum.photos/400/250?image=1077"
-              />
-              <div class="img-info">
-                <h4>Image Title 10</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="gallery_product col-sm-3 col-xs-6 filter category2">
-            <a
-              class="fancybox"
-              rel="ligthbox"
-              href="https://picsum.photos/400/250?image=102"
-            >
-              <img
-                class="img-responsive"
-                alt=""
-                src="https://picsum.photos/400/250?image=102"
-              />
-              <div class="img-info">
-                <h4>Image Title 11</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </a>
-          </div>
-
-          <div class="gallery_product col-sm-3 col-xs-6 filter category3">
-            <a
-              class="fancybox"
-              rel="ligthbox"
-              href="https://picsum.photos/400/250?image=106"
-            >
-              <img
-                class="img-responsive"
-                alt=""
-                src="https://picsum.photos/400/250?image=106"
-              />
-              <div class="img-info">
-                <h4>Image Title 12</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </div>
-            </a>
-          </div>
+        <div class="gallery_product col-sm-4 col-xs-12 mb-2 filter category3">
+          <a
+            class="fancybox"
+            rel="ligthbox"
+            href="image/gallary12.JPG"
+          >
+            <img
+              class="img-responsive"
+              alt=""
+              src="image/gallary12.JPG"
+            />
+            <!-- <div class="img-info">
+              <h4>Image Title 12</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div> -->
+          </a>
         </div>
       </div>
-    </section>
-
+    </div>
+  </section>
 
     <footer class="g-bg-color--dark">
         <div class="container g-padding-y-50--xs">
             <div class="row">
-                <div class="col-xs-6">
+                <div class="col-xs-3">
                     <a href="index.html">
-                        <img class=" g-height-auto--xs" src="img/logo.png" alt="Megakit Logo">
+                        <img class=" g-height-1--xs" src="img/logo.png" alt="Megakit Logo">
                     </a>
                 </div>
-                <div class="col-xs-6 g-text-right--xs">
-                    <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity-light"><a href="http://keenthemes.com/preview/Megakit/">Kritanj</a> Designed with  &#10084; by <a href="#">Samadrit das &nbsp</a><a href="#">Soura bose</a></p>
+                <div class="col-xs-9 g-text-right--xs">
+                    <p class="g-font-size-14--xs g-margin-b-0--xs g-color--white-opacity-light"><a href="http://keenthemes.com/preview/Megakit/">Kritanj</a> Designed with ❤️ by Web Team</p>
                 </div>
             </div>
         </div>
@@ -1097,7 +955,7 @@
   
 
     <!--  -->
-    <a href="javascript:void(0);" class="s-back-to-top js__back-to-top"></a>
+    <a href="javascript:void(0);" class="s-back-to-top js__back-to-top" onclick="audioPlay()"></a>
     <script type="text/javascript" src="vendor/jquery.min.js"></script>
     <script type="text/javascript" src="vendor/jquery.migrate.min.js"></script>
     <script
@@ -1182,6 +1040,10 @@
         scaleMobile: 1.0,
         backgroundColor: 0x23153c,
       });
+      audioPlay=()=>{
+        let audio=new Audio('clicksound.mp3')
+        audio.play();
+    }  
     </script>
     <!--  -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>

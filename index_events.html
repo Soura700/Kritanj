@@ -596,28 +596,28 @@
                 <div id="js__filters-portfolio-gallery" class="s-portfolio__filter-v1 cbp-l-filters-text cbp-l-filters-center">
                     <!-- <div data-filter="*" class="s-portfolio__filter-v1-item cbp-filter-item cbp-filter-item-active">Show All</div> -->
                     <!-- Drop Down  -->
-                    <div class="dropdown s-portfolio__filter-v1-item cbp-filter-item">
+                    <div class="dropdown ">
                         <!-- <button class="btn btn-secondary dropdown-toggle" style="background: none;border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Coding
                         </button> -->
-                            <a class="button btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" href="#" style="--color:#1e9bff;" id="changeevent">
+                            <button class="button btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="--color:#1e9bff;" >
                               <span></span>
                               <span></span>
                               <span></span>
                               <span></span>
                               Coding
-                            </a>
-                        <ul class="dropdown-menu" style="background-color: transparent;">
-                            <li class="li" onclick="coding()">
-                                <div  data-filter=".compete" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Coding</div>
-                            </li>
-                            <li class="li" onclick="robotics()">
-                                <div  data-filter=".compete" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Robotics</div>
-                            </li>
-                            <li onclick="games()">
-                                <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Games</div>
-                            </li>
-                            <li onclick="civil()">
+                            </button>
+                        <div class="dropdown-menu" style="background-color: transparent;" aria-labelledby="dropdownMenuButton">
+                            <div data-filter=".compete" class="dropdown-item s-portfolio__filter-v1-item cbp-filter-item">
+                                Coding
+                            </div>
+                            
+                                <div  data-filter=".compete" class="dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Robotics</div>
+                            
+                           
+                                <div  data-filter=".games" class="dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Games</div>
+                            
+<!--                             <li onclick="civil()">
                                 <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Civil Creation</div>
                             </li>
                             <li onclick="project()">
@@ -628,8 +628,8 @@
                             </li>
                             <li onclick="electron()">
                                 <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Elek-Tron</div>
-                            </li>
-                        </ul>
+                            </li> -->
+                        </div>
                     </div>
                     <!-- <div class="dropdown s-portfolio__filter-v1-item cbp-filter-item">
                         <button class="btn btn-secondary dropdown-toggle" style="background: none; border: none;"  type="button" data-bs-toggle="dropdown" aria-expanded="false">

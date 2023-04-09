@@ -246,7 +246,7 @@
                                 class="s-header__nav-menu-link s-header__nav-menu-link-divider"
                                 href="teams.html" onclick="audioPlay()">Team</a></li>
                         <li class="s-header__nav-menu-item"><a
-                                class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="" onclick="audioPlay()">Contact Us</a>
+                                class="s-header__nav-menu-link s-header__nav-menu-link-divider" href="contact.html" onclick="audioPlay()">Contact Us</a>
                         </li>
                     </ul>
                     <!-- End Menu List -->
@@ -326,8 +326,8 @@
                     <!-- <button class="btn btn-secondary dropdown-toggle" style="background: none;border: none;" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                           Coding
                         </button> -->
-                    <button class="button btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" onclick="sound()" aria-expanded="false" style="--color:#1e9bff;">
+                    <button class="button btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"  role="button"
+                    data-bs-toggle="dropdown" aria-haspopup="true" onclick="sound()" aria-expanded="false" style="--color:#1e9bff;">
                         <span></span>
                         <span></span>
                         <span></span>
@@ -368,7 +368,7 @@
                         </li>
                         <li></li>
                         <div data-filter=".mech" onclick="mech()"
-                            class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">MechTech</div>
+                            class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Mech-Tech</div>
                         </li>
                         <li></li>
                         <div data-filter=".management" onclick="management()"
@@ -1372,7 +1372,7 @@
         }
         electron = () => {
             let change = document.getElementById('dropdownMenuButton')
-            change.innerText = 'Elec-tron'
+            change.innerText = 'Elek-tron'
             let audio = new Audio('eventssound.wav')
             audio.play();
         }

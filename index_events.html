@@ -332,10 +332,13 @@
                         <span></span>
                         <span></span>
                         <span></span>
-                        Coding
+                        All
                     </button>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="drop"
                         style="background-color: #201436;">
+                        <div data-filter=".all" onclick="allevents()"
+                            class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">All</div>
+                        <li></li>
                         <div data-filter=".coding" onclick="coding()"
                             class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Coding</div>
                         <li></li>
@@ -374,24 +377,6 @@
                         <div data-filter=".apt" onclick="apt()"
                             class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Apt-Venture</div>
                         </li>
-                        <!-- <li class="li dropdown-item" onclick="robotics()">
-                                <div  data-filter=".compete" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Robotics</div>
-                            </li>
-                            <li class="li dropdown-item" onclick="games()">
-                                <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Games</div>
-                            </li>
-                            <li class="li dropdown-item" onclick="civil()">
-                                <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Civil Creation</div>
-                            </li>
-                            <li class="li dropdown-item" onclick="project()">
-                                <div  data-filter=".exhibition" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Project Exhibition</div>
-                            </li>
-                            <li class="li dropdown-item" onclick="fun()">
-                                <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Fun Events</div>
-                            </li>
-                            <li class="li dropdown-item" onclick="electron()">
-                                <div  data-filter=".games" class="li dropdown-item s-portfolio__filter-v1-item cbp-filter-item">Elek-Tron</div>
-                            </li>  -->
                     </ul>
                 </div>
             </div>
@@ -403,7 +388,7 @@
         <div id="js__grid-portfolio-gallery" class="cbp">
 
             <!-- Gaming items -->
-            <div class="s-portfolio__item cbp-item games">
+            <div class="s-portfolio__item cbp-item games all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/03.jpg" alt="Portfolio Image">
                 </div>
@@ -421,7 +406,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item games">
+            <div class="s-portfolio__item cbp-item games all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/03.jpg" alt="Portfolio Image">
                 </div>
@@ -439,7 +424,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item games">
+            <div class="s-portfolio__item cbp-item games all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/03.jpg" alt="Portfolio Image">
                 </div>
@@ -457,7 +442,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item games">
+            <div class="s-portfolio__item cbp-item games all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/03.jpg" alt="Portfolio Image">
                 </div>
@@ -475,7 +460,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item games">
+            <div class="s-portfolio__item cbp-item games all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/03.jpg" alt="Portfolio Image">
                 </div>
@@ -493,7 +478,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item games">
+            <div class="s-portfolio__item cbp-item games all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/03.jpg" alt="Portfolio Image">
                 </div>
@@ -513,7 +498,7 @@
             </div>
 
             <!-- Project Exibition items -->
-            <div class="s-portfolio__item cbp-item exhibition">
+            <div class="s-portfolio__item cbp-item exhibition all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/02.jpg" alt="Portfolio Image">
                 </div>
@@ -531,7 +516,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item exhibition">
+            <div class="s-portfolio__item cbp-item exhibition all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/02.jpg" alt="Portfolio Image">
                 </div>
@@ -549,7 +534,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item exhibition">
+            <div class="s-portfolio__item cbp-item exhibition all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/02.jpg" alt="Portfolio Image">
                 </div>
@@ -569,7 +554,7 @@
             </div>
 
             <!-- Civil Creations items -->
-            <div class="s-portfolio__item cbp-item compete civil">
+            <div class="s-portfolio__item cbp-item  civil all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/01.jpg" alt="Portfolio Image">
                 </div>
@@ -587,7 +572,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item compete civil">
+            <div class="s-portfolio__item cbp-item  civil all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/01.jpg" alt="Portfolio Image">
                 </div>
@@ -605,7 +590,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item compete civil">
+            <div class="s-portfolio__item cbp-item  civil all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/01.jpg" alt="Portfolio Image">
                 </div>
@@ -623,7 +608,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item compete civil">
+            <div class="s-portfolio__item cbp-item civil all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/01.jpg" alt="Portfolio Image">
                 </div>
@@ -643,7 +628,7 @@
             </div>
 
             <!-- Robotics Items -->
-            <div class="s-portfolio__item cbp-item compete robotics">
+            <div class="s-portfolio__item cbp-item  robotics all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/01.jpg" alt="Portfolio Image">
                 </div>
@@ -661,7 +646,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item compete robotics">
+            <div class="s-portfolio__item cbp-item  robotics all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/01.jpg" alt="Portfolio Image">
                 </div>
@@ -679,7 +664,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item compete robotics">
+            <div class="s-portfolio__item cbp-item robotics all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/01.jpg" alt="Portfolio Image">
                 </div>
@@ -697,7 +682,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item compete robotics">
+            <div class="s-portfolio__item cbp-item robotics all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/01.jpg" alt="Portfolio Image">
                 </div>
@@ -715,7 +700,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item compete robotics">
+            <div class="s-portfolio__item cbp-item robotics all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/01.jpg" alt="Portfolio Image">
                 </div>
@@ -733,7 +718,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item compete robotics">
+            <div class="s-portfolio__item cbp-item robotics all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/01.jpg" alt="Portfolio Image">
                 </div>
@@ -751,7 +736,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item compete robotics">
+            <div class="s-portfolio__item cbp-item robotics all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/01.jpg" alt="Portfolio Image">
                 </div>
@@ -771,7 +756,7 @@
             </div>
 
             <!-- Coding Items -->
-            <div class="s-portfolio__item cbp-item coding">
+            <div class="s-portfolio__item cbp-item coding all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -789,7 +774,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item coding">
+            <div class="s-portfolio__item cbp-item coding all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -807,7 +792,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item coding">
+            <div class="s-portfolio__item cbp-item coding all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -825,7 +810,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item coding">
+            <div class="s-portfolio__item cbp-item coding all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -843,7 +828,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item coding">
+            <div class="s-portfolio__item cbp-item coding all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -861,7 +846,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item coding">
+            <div class="s-portfolio__item cbp-item coding all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -881,7 +866,7 @@
             </div>
 
             <!-- Electron items -->
-            <div class="s-portfolio__item cbp-item electron">
+            <div class="s-portfolio__item cbp-item electron all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -899,7 +884,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item electron">
+            <div class="s-portfolio__item cbp-item electron all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -919,7 +904,7 @@
             </div>
 
             <!-- Mech Tech items -->
-            <div class="s-portfolio__item cbp-item mech">
+            <div class="s-portfolio__item cbp-item mech all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/05.jpg" alt="Portfolio Image">
                 </div>
@@ -937,7 +922,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item mech">
+            <div class="s-portfolio__item cbp-item mech all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -955,7 +940,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item mech">
+            <div class="s-portfolio__item cbp-item mech all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -975,7 +960,7 @@
             </div>
 
             <!-- Management items -->
-            <div class="s-portfolio__item cbp-item management">
+            <div class="s-portfolio__item cbp-item management all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -993,7 +978,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item management">
+            <div class="s-portfolio__item cbp-item management all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1011,7 +996,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item management">
+            <div class="s-portfolio__item cbp-item management all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1029,7 +1014,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item management">
+            <div class="s-portfolio__item cbp-item management all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1049,7 +1034,7 @@
             </div>
 
             <!-- Fun Events -->
-            <div class="s-portfolio__item cbp-item fun">
+            <div class="s-portfolio__item cbp-item fun all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1067,7 +1052,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item fun">
+            <div class="s-portfolio__item cbp-item fun all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1085,7 +1070,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item fun">
+            <div class="s-portfolio__item cbp-item fun all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1103,7 +1088,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item fun">
+            <div class="s-portfolio__item cbp-item fun all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1121,7 +1106,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item fun">
+            <div class="s-portfolio__item cbp-item fun all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1139,7 +1124,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item fun">
+            <div class="s-portfolio__item cbp-item fun all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1157,7 +1142,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item fun">
+            <div class="s-portfolio__item cbp-item fun all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1175,7 +1160,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item fun">
+            <div class="s-portfolio__item cbp-item fun all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1193,7 +1178,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item fun">
+            <div class="s-portfolio__item cbp-item fun all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1211,7 +1196,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item fun">
+            <div class="s-portfolio__item cbp-item fun all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1229,7 +1214,7 @@
                     </ul>
                 </div>
             </div>
-            <div class="s-portfolio__item cbp-item fun">
+            <div class="s-portfolio__item cbp-item fun all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1249,7 +1234,7 @@
             </div>
 
             <!-- Apt Venture items -->
-            <div class="s-portfolio__item cbp-item apt">
+            <div class="s-portfolio__item cbp-item apt all">
                 <div class="s-portfolio__img-effect">
                     <img src="img/970x647/09.jpg" alt="Portfolio Image">
                 </div>
@@ -1363,7 +1348,7 @@
         }
         games = () => {
             let change = document.getElementById('dropdownMenuButton')
-            change.innerText = 'Games'
+            change.innerText = 'Gaming'
             let audio = new Audio('eventssound.wav')
             audio.play();
         }
@@ -1387,7 +1372,7 @@
         }
         electron = () => {
             let change = document.getElementById('dropdownMenuButton')
-            change.innerText = 'Electron'
+            change.innerText = 'Elec-tron'
             let audio = new Audio('eventssound.wav')
             audio.play();
         }
@@ -1406,6 +1391,12 @@
         apt = () => {
             let change = document.getElementById('dropdownMenuButton')
             change.innerText = 'Apt-Venture'
+            let audio = new Audio('eventssound.wav')
+            audio.play();
+        }
+        allevents = () => {
+            let change = document.getElementById('dropdownMenuButton')
+            change.innerText = 'All'
             let audio = new Audio('eventssound.wav')
             audio.play();
         }

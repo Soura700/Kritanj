@@ -51,12 +51,13 @@
        @media screen and (max-width: 694px)
        { .svg
          {
+          width: 111%;
           margin-top:111% ;
        } }
        @media screen and (max-width: 430px)
        { .svg
          {
-          width: 130%;
+          width: 111%;
        } }
        @media screen and (max-width: 359px)
        { .svg

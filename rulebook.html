@@ -22,24 +22,15 @@
             height: 100%;
             overflow: hidden;
         }
-        object {
+        iframe {
             width: 100%;
             height: 100%;
             border: 0
         }
     </style>
-    <script language="javascript">
-        function handleMessage(msg) {
-          alert('got message '+msg);
-        }
-        function setupHandler() {
-          document.getElementById("myPdf").messageHandler = { onMessage: handleMessage };
-        }
-    </script>
 </head>
-<body onLoad="setupHandler();">
-    <div id="container">
-        <object id="myPdf" data="RULEBOOK.pdf"></object>
-    </div>
+<body>
+    <iframe src="https://drive.google.com/file/d/1oL46jPrtRyJZbL1FsfA7VKzQxSM3Agm4/preview" width="640" height="480" allow="autoplay"></iframe>
+
 </body>
 </html>

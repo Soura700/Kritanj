@@ -9,12 +9,17 @@
     <style>
         #container{
             height: 100vh;
+            width: 100vw;
+        }
+        #frame{
+            height: 100%;
+            width: 100%;
         }
     </style>
 </head>
 <body>
     <div id="container">
-        <object width="100%" height="100%" data="RULEBOOK.pdf"></object>
+        <iframe id="frame" src="RULEBOOK.pdf" title='SOME_TITLE' />
     </div>
 </body>
 </html>
